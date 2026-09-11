@@ -1,0 +1,6 @@
+# 运行时数据与临时文件不入库
+data/
+node_modules/
+*.log
+_chk.js
+.DS_Store

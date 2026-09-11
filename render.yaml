@@ -1,0 +1,10 @@
+# Render Blueprint — 导入本仓库后 Render 可自动识别，零手动配置部署
+services:
+  - type: web
+    name: match-compat
+    env: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    autoDeploy: true

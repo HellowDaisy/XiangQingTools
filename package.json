@@ -1,0 +1,14 @@
+{
+  "name": "match-dating-huodong",
+  "version": "1.0.0",
+  "description": "相亲契合度测算 · 托管服务端",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "keywords": ["dating", "match", "compatibility"],
+  "license": "MIT"
+}
