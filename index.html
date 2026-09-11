@@ -160,7 +160,7 @@
           <button class="btn" onclick="goMerge()">📊 查看契合度结果</button>
         </div>
       </div>
-      <div class="foot"><a href="index.html" style="color:var(--muted)">← 回首页</a>　结果仅供交友参考。</div>
+      <div class="foot"><a href="#" onclick="goHome();return false;" style="color:var(--muted)">← 回首页</a>　结果仅供交友参考。</div>
     </div>
   </section>
 
@@ -180,7 +180,7 @@
         <button class="btn ghost" onclick="startFill()">✍️ 先去填我的答案</button>
       </div>
     </div>
-    <div class="foot"><a href="index.html" style="color:var(--muted)">← 回首页</a></div>
+    <div class="foot"><a href="#" onclick="goHome();return false;" style="color:var(--muted)">← 回首页</a></div>
   </section>
 
   <!-- 结果 -->
@@ -206,7 +206,7 @@
     </div>
     <div class="share">
       <button class="btn ghost small" onclick="exportResult()">📄 导出双方答卷</button>
-      <button class="btn ghost small" onclick="location.href='index.html'">再来一对</button>
+      <button class="btn ghost small" onclick="goHome()">再来一对</button>
     </div>
     <div class="foot">结果仅供交友参考，不代表真实关系走向。</div>
   </section>
@@ -256,6 +256,7 @@ let cur = 0;
 const myAnswers = {};
 function show(id){ document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("active", s.id===id)); }
 function $(id){ return document.getElementById(id); }
+function goHome(){ show("sc-home"); syncMyState(); }
 
 /* ================== 保存我的答案 ================== */
 const SAVE_KEY = "match_static_my_saved";
